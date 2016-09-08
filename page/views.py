@@ -1,8 +1,16 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.core.mail import send_mail
 import os
 # Create your views here.
 def view_home(request):
+    if request.method=='POST':
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        phone=request.POST.get('phone')
+        message=request.POST.get('message')
+        subject='New contact from name : {name}   phone : {phone}'.format(name=name,phone=phone)
+        send_mail(subject,message,email,['subha.py@gmail.com'],)
     return render(request,'base.html')
 
 def download_pdf(request,filename):

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Subha Bera - Freelancer</title>
+    <title>Subha Bera</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -169,14 +169,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>I’m Subha Bera. My friends call me “dk,” and it just another story. Some people even call me “Bera” On the internet, I’m subha-py (with a -). Most of my works are full-stacked, I know that is kind a hard as a not much experienced coder. But, I believe hard working is the only key to success. I have two other qualities which I consider as my strength, those are Punctuality and Honesty.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>I have been known as "The Python Guy" in my <a target="_blank" style="color:red;" href="{% url 'download' 'passout' %}"> college days</a> (West Bengal University of Technology) and in my <a target="_blank" style="color:red" href="{% url 'download' 'internship' %}">internship</a> period at Ixia Technologies. I would like to confess you something I have a thing for automation scrips and Django Platorm. Ways to be ambiently aware of me, if direct action is not needed is just below in contact section.</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                    <a target='_blank' href="{% url 'download' 'resume' %}" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Resume
                     </a>
                 </div>
             </div>
@@ -196,32 +196,32 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" novalidate method="POST" action=".">{% csrf_token %}
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input name="name" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input name="email" type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <input name="phone" type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -245,32 +245,32 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>6/21 Podder Nagar
+                            <br>Kolkata, India 700068</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/crazy.zlatanfan" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                <a target="_blank" href="https://plus.google.com/u/0/+SubhaBera" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a target="_blank" href="https://twitter.com/subhaiscool" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/subha-bera-a6023ba6?trk=hp-identity-headline" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a target="_blank" href="https://github.com/subha-py" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>About Website</h3>
+                        <p>This a website for recruiters to contact Subha Bera.</p>
                     </div>
                 </div>
             </div>
@@ -279,7 +279,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; Subha Bera 2016
                     </div>
                 </div>
             </div>
@@ -309,10 +309,10 @@
                             <h2>Project Title</h2>
                             <hr class="star-primary">
                             <img src="/static/img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p> <a href="{% url 'download' 'ixautotest' %}">Ix Autotest</a>. A web platform to trigger regressions of Ix Network - QA team. The project is not for public view , please consult <a href="{% url 'download' 'internship' %}">this</a> for authentication purposes.</p>
+                            <p> <a target="_blank" href="{% url 'download' 'ixautotest' %}">Ix Autotest</a>. A web platform to trigger regressions of Ix Network - QA team. The project is not for public view , please consult <a target="_blank" href="{% url 'download' 'internship' %}">this</a> for authentication purposes.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="https://www.ixiacom.com/">Ixia Technologies</a>
+                                    <strong><a target="_blank" href="https://www.ixiacom.com/">Ixia Technologies</a>
                                     </strong>
                                 </li>
                                 <li>Date:
@@ -324,7 +324,7 @@
                                     </strong>
                                 </li>
                                 <li>VCS:
-                                    <strong><a href="https://github.com/subha-py/ixautotest">Github</a>
+                                    <strong><a target="_blank" href="https://github.com/subha-py/ixautotest">Github</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -350,10 +350,10 @@
                             <h2>Computer Science Using Python</h2>
                             <hr class="star-primary">
                             <img src="/static/img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>This a course provided by Massachusetts Institute of Technology(MIT), which consists of bundles of assignements and real world projects.<a href="{% url 'download' 'mit'%}">Here</a>, is the course certificate.</p>
+                            <p>This a course provided by Massachusetts Institute of Technology(MIT), which consists of bundles of assignements and real world projects.<a target="_blank" href="{% url 'download' 'mit'%}">Here</a>, is the course certificate.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://web.mit.edu/">Massachusetts Institute of Technology(MIT)</a>
+                                    <strong><a target="_blank" href="http://web.mit.edu/">Massachusetts Institute of Technology(MIT)</a>
                                     </strong>
                                 </li>
                                 <li>Date:
@@ -365,7 +365,7 @@
                                     </strong>
                                 </li>
                                  <li>Certificate:
-                                    <strong><a href="{% url 'download' 'mit'%}">MITX 6.00.1.x</a>
+                                    <strong><a target="_blank" href="{% url 'download' 'mit'%}">MITX 6.00.1.x</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -391,10 +391,10 @@
                             <h2>Data Science Using Python</h2>
                             <hr class="star-primary">
                             <img src="/static/img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>This a course provided by Massachusetts Institute of Technology(MIT), which consists of bundles of assignements and real world projects.<a href='https://courses.edx.org/certificates/18566def5d44471b8ac6655ab4cb96ba'>Here</a>, is the course certificate.</p>
+                            <p>This a course provided by Massachusetts Institute of Technology(MIT), which consists of bundles of assignements and real world projects.<a target="_blank" href='https://courses.edx.org/certificates/18566def5d44471b8ac6655ab4cb96ba'>Here</a>, is the course certificate.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong><a href="http://web.mit.edu/">Massachusetts Institute of Technology(MIT)</a>
+                                    <strong><a target="_blank" href="http://web.mit.edu/">Massachusetts Institute of Technology(MIT)</a>
                                     </strong>
                                 </li>
                                 <li>Date:
@@ -406,7 +406,7 @@
                                     </strong>
                                 </li>
                                  <li>Certificate:
-                                    <strong><a href='https://courses.edx.org/certificates/18566def5d44471b8ac6655ab4cb96ba'>MITX 6.00.2.x</a>
+                                    <strong><a target="_blank" href='https://courses.edx.org/certificates/18566def5d44471b8ac6655ab4cb96ba'>MITX 6.00.2.x</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -435,7 +435,7 @@
                             <p>This is a course provided by University of Michigan on python.</p>
                             <ul class="list-inline item-details">
                                  <li>Client:
-                                    <strong><a href="https://www.umich.edu/">University of Michigan(umich)</a>
+                                    <strong><a target="_blank" href="https://www.umich.edu/">University of Michigan(umich)</a>
                                     </strong>
                                 </li>
                                 <li>Date:
@@ -447,7 +447,7 @@
                                     </strong>
                                 </li>
                                  <li>Certificate:
-                                    <strong><a href='{% url "download" "coursera" %}'>Python for Everyone (P4E)</a>
+                                    <strong><a target="_blank" href='{% url "download" "coursera" %}'>Python for Everyone (P4E)</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -473,7 +473,7 @@
                             <h2>Universal To-Do List</h2>
                             <hr class="star-primary">
                             <img src="/static/img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>A universal autheticated to-do list which can be accessable from any where in the earth. <br>This <a href="{% url 'download' 'test_with_python' %}">project</a> was made to learn about test driven development in Django in deeper.</p>
+                            <p>A universal autheticated to-do list which can be accessable from any where in the earth. <br>This <a target="_blank" href="{% url 'download' 'test_with_python' %}">project</a> was made to learn about test driven development in Django in deeper.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Self-Interest
@@ -488,7 +488,7 @@
                                     </strong>
                                 </li>
                                 <li>VCS:
-                                    <strong><a href="https://github.com/subha-py/test_with_python">Github</a>
+                                    <strong><a target="_blank" href="https://github.com/subha-py/test_with_python">Github</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -514,7 +514,7 @@
                             <h2>Other Projects</h2>
                             <hr class="star-primary">
                             <img src="/static/img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>There are two more projects that I did for leanrning pruposes. <a href="{% url 'download' 'blogproject' %}">Blog</a> and <a href="{% url 'download' 'gift_for_her' %}">Web Scrapbook</a>. Web Scrapbook is live at : <a href="http://happybirthdaymimmi.tk">here</a></p>
+                            <p>There are two more projects that I did for leanrning pruposes. <a target="_blank" href="{% url 'download' 'blogproject' %}">Blog</a> and <a target="_blank" href="{% url 'download' 'gift_for_her' %}">Web Scrapbook</a>. Web Scrapbook is live at : <a target="_blank" href="http://happybirthdaymimmi.tk">here</a></p>
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Self Interest
@@ -529,7 +529,7 @@
                                     </strong>
                                 </li>
                                 <li>Github:
-                                    <strong><a href="https://github.com/subha-py/blogproject">Blog</a> & <a href="https://github.com/subha-py/gift_for_her">Web Scrapbook</a>
+                                    <strong><a target="_blank" href= "https://github.com/subha-py/blogproject">Blog</a> & <a target="_blank" href="https://github.com/subha-py/gift_for_her">Web Scrapbook</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -552,7 +552,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="/static/js/jqBootstrapValidation.js"></script>
-    <script src="/static/js/contact_me.js"></script>
+    <!--<script src="/static/js/contact_me.js"></script>-->
 
     <!-- Theme JavaScript -->
     <script src="/static/js/freelancer.min.js"></script>

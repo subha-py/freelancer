@@ -103,3 +103,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
+
+#email settings
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER='subha.py@gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_PASSWORD='mo8ivA94Tion'
+EMAIL_USE_TLS=True
