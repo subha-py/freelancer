@@ -9,7 +9,7 @@ def view_home(request):
         email=request.POST.get('email')
         phone=request.POST.get('phone')
         message=request.POST.get('message')
-        subject='New contact from name : {name}   phone : {phone}'.format(name=name,phone=phone)
+        subject='New contact from name : {name} | phone : {phone}'.format(name=name,phone=phone)
         send_mail(subject,message,email,['subha.py@gmail.com'],)
     return render(request,'base.html')
 
