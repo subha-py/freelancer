@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 alias ci='inv ci'
 alias runserver='python manage.py runserver'
+alias updatedb='python manage.py makemigrations; python manage.py migrate'
 alias pp='per_project'
 
 function go() {
